@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body,
+html,
+#root,
+.detail {
+  height: 100%;
+}
+
+.detail {
+  display: flex;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  flex-direction: column;
+  display: flex;
+  border-right: 2px solid #DDD;
+}
+
+.demo {
+  flex: 2;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.code-editor {
+  height: 100%;
+  position: relative;
+}
+
+.mode {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  text-align: center;
+  background-color: white;
+  width: 50px;
+  line-height: 30px;
+  border: 1px solid #DDD;
+  border-right: 0;
+  border-top: 0;
+}
+
+.css-editor {
+  border-top: 2px solid #DDD;
+  flex: 1;
+}
+
+.CodeMirror {
+  height: 100%;
+  box-sizing: border-box;
+}
+.cm-s-solarized.CodeMirror {
+  box-shadow: none;
+}
+
+.list {
+  width: 560px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #DDD;
+}
+
+.list h1 {
+  text-align: center;
+}
+
+.list a {
+  text-decoration: none;
+  line-height: 24px;
+  color: blue;
+}
+
+.list a:hover {
+  color: red;
+}
+
+.loading {
+  font-size: 12px;
+}
